@@ -14,4 +14,4 @@ parts:
   onboard:
     plugin: autotools
     source: https://launchpad.net/onboard
-    source-type: git
+    source-type: bzr
