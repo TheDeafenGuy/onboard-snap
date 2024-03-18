@@ -12,6 +12,6 @@ apps:
 
 parts:
   onboard:
-    plugin: autotools
+    plugin: python
     source: https://launchpad.net/onboard
     source-type: bzr
