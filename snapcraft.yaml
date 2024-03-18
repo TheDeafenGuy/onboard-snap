@@ -1,0 +1,16 @@
+name: onboard
+version: '1.0'
+summary: On-screen keyboard for Linux
+description: |
+  Onboard is an on-screen keyboard useful for touch devices or accessibility needs.
+grade: stable
+confinement: strict
+
+apps:
+  onboard:
+    command: onboard
+
+parts:
+  onboard:
+    plugin: autotools
+    source: https://launchpad.net/onboard
