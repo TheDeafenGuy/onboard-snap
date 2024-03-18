@@ -18,6 +18,7 @@ parts:
     build-packages:
           - python3
     override-build: |
+      echo "deb-src http://archive.ubuntu.com/ubuntu/ xenial main restricted" >> /etc/apt/sources.list
       sudo apt-get update
       sudo apt-get build-dep -y onboard
       sudo apt-get install -y devscripts
