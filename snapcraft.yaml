@@ -12,6 +12,6 @@ apps:
 
 parts:
   onboard:
-    plugin: python
+    plugin: deb
     source: https://launchpad.net/onboard
     source-type: bzr
