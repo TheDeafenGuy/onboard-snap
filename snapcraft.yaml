@@ -16,11 +16,9 @@ parts:
     source: https://launchpad.net/onboard
     source-type: bzr
     override-build: |
-    sudo apt-get build-dep onboard
-        sudo apt-get install devscripts
-        bzr branch lp:onboard
-        cd onboard
-
-        debuild binary
-
-        sudo dpkg -i ../onboard*.deb
+      sudo apt-get update
+      sudo apt-get build-dep -y onboard
+      sudo apt-get install -y devscripts
+      bzr branch lp:onboard
+      cd onboard
+      debuild binary
