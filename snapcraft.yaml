@@ -13,7 +13,7 @@ apps:
 parts:
   onboard:
     plugin: nil
-    source: https://launchpad.net/onboard
+    source: https://bazaar.launchpad.net/~onboard/onboard/trunk/files
     source-type: bzr
     build-packages:
           - python3
