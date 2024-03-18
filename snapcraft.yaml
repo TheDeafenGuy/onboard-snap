@@ -15,6 +15,8 @@ parts:
     plugin: nil
     source: https://launchpad.net/onboard
     source-type: bzr
+    build-packages:
+          - python3
     override-build: |
       sudo apt-get update
       sudo apt-get build-dep -y onboard
