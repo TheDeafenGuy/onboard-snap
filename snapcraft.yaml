@@ -12,6 +12,15 @@ apps:
 
 parts:
   onboard:
-    plugin: deb
+    plugin: nil
     source: https://launchpad.net/onboard
     source-type: bzr
+    override-build: |
+    sudo apt-get build-dep onboard
+        sudo apt-get install devscripts
+        bzr branch lp:onboard
+        cd onboard
+
+        debuild binary
+
+        sudo dpkg -i ../onboard*.deb
