@@ -19,3 +19,5 @@ parts:
       - build-essential
       - fakeroot
       - python3
+    python-packages:
+      - pip==21.3.1
