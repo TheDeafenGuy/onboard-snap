@@ -7,8 +7,8 @@ grade: stable
 confinement: strict
 
 apps:
-  onboard-snap:
-    command: onboard-snap
+  onboard:
+    command: onboard
 
 parts:
   onboard:
