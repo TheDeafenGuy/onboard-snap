@@ -17,3 +17,4 @@ parts:
     source-type: bzr
     build-packages:
           - python3
+          - debuild
