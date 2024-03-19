@@ -12,13 +12,10 @@ apps:
 
 parts:
   onboard:
-    plugin: python3
+    plugin: python
     source: https://code.launchpad.net/onboard
     source-type: bzr
     build-packages:
       - build-essential
       - fakeroot
       - python3
-    override-build: |
-      snapcraftctl build
-      snapcraftctl set-python-packages pip==20.3.4
