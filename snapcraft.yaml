@@ -8,7 +8,7 @@ confinement: strict
 
 apps:
   onboard-snap:
-    command: onboard
+    command: onboard-snap
 
 parts:
   onboard:
