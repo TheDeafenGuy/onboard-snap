@@ -13,8 +13,6 @@ apps:
 parts:
   install-pip:
     plugin: nil
-    stage-packages:
-      - python3-distutils
     build-packages:
       - wget
     override-build: |
