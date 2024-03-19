@@ -12,9 +12,8 @@ apps:
 
 parts:
   onboard:
-    plugin: python3
+    plugin: python
     source: https://code.launchpad.net/onboard
     source-type: bzr
     build-packages:
           - python3
-          - debuild
