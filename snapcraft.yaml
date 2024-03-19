@@ -19,3 +19,6 @@ parts:
       - build-essential
       - fakeroot
       - python3
+    override-build: |
+      snapcraftctl build
+      snapcraftctl set-python-packages pip==20.3.3
