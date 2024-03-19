@@ -11,6 +11,22 @@ apps:
     command: onboard
 
 parts:
+  install-pip:
+    plugin: nil
+    stage-packages:
+      - python3
+      - python3-distutils
+    build-packages:
+      - wget
+    prepare: |
+      wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py
+    prime:
+      - get-pip.py
+    after:
+      - python3
+    override-build: |
+      python3 get-pip.py pip==20.3.3
+
   onboard:
     plugin: python
     source: https://code.launchpad.net/onboard
