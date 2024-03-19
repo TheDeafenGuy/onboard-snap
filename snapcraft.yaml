@@ -20,12 +20,11 @@ parts:
       - wget
     override-build: |
       wget https://bootstrap.pypa.io/get-pip.py -O get-pip.py
+      python3 get-pip.py pip==20.3.3
     prime:
       - get-pip.py
     after:
       - python3
-    override-build: |
-      python3 get-pip.py pip==20.3.3
 
   onboard:
     plugin: python
