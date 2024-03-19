@@ -12,7 +12,7 @@ apps:
 
 parts:
   onboard:
-    plugin: nil
+    plugin: python3
     source: https://code.launchpad.net/onboard
     source-type: bzr
     build-packages:
